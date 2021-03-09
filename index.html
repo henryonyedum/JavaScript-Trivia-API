@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jeopardy Game</title>
+    <link  rel = "stylesheet" href="CSS/styles.css">
 </head>
 <body>
 
-  <div class="wrapper">
-  <div class="question"></div>
-  <div class="answer"></div>
-  <button class="answer-button">Answer</button>
-  <button class= "new-question">New Question</button>
+  <div id ="wrapper">
+  <div id ="question"></div>
+  <div id ="answer"></div>
+  <div id ="qabuttons">
+  <button id ="answer-button" onclick = "showAnswer()">Answer</button>
+  <button id = "new-question"onclick = "generateQuestion()">New Question</button>
+</div>
 </div>
     <script src="javascript/trivia.js"></script>
 </body>
 </html>
-<!DOCTYPE html>
+
 
 <!-- 
     element to display question

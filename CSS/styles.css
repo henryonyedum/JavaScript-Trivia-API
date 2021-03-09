@@ -1,0 +1,54 @@
+
+* {
+    box-sizing: border-box;
+    background-color:rgb(135, 222, 150);
+    font-family: 'Times New Roman', Times, serif;
+   
+    
+}
+
+#wrapper{
+    width: 70%;
+    margin:auto
+}
+
+#question{
+font-size: 4rem;
+background-color: bisque;
+margin-bottom:50px;
+border-radius: 20px;
+padding:20px;
+}
+
+#answer{
+    font-size: 3rem;
+    margin:auto;
+    background-color:bisque;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    display:none;
+
+}
+#qabuttons{
+    margin: auto;
+    text-align: center;
+    margin-top:50px;
+
+}
+
+#answer-button{
+    background-color:lightskyblue;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: auto;
+
+    
+}
+#new-question{
+    background-color:lightcoral;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: auto;
+    
+}
