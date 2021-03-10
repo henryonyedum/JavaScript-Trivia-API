@@ -1,4 +1,5 @@
 generateQuestion()
+
 function generateQuestion () {
     document.getElementById("answer").style.display = "none";
     let xhttp = new XMLHttpRequest();
@@ -9,8 +10,8 @@ function generateQuestion () {
         displayCategory(jsonData)
         displayQuestion(jsonData) 
         showDate(jsonData)
-        console.log(jsonData[0].question)
-        console.log(jsonData)
+        // console.log(jsonData[0].question)
+        // console.log(jsonData)
     }
     
     }
@@ -30,22 +31,18 @@ function displayQuestion(input){
 function showAnswer() {
     document.getElementById("answer").style.display = "block";
 }
+
 function showDate(input){
     document.getElementById("questiondate").innerHTML = `This question aired on: ${formatDate(input[0].airdate)}`
 
 }
 
 function formatDate (date){
- let dateArray = date.slice(0,10).split("-")
- let orderDate=[]
- orderDate.unshift(dateArray[0])
- orderDate.unshift(dateArray[2])
- orderDate.unshift(dateArray[1])
- let finalDate = orderDate.join("/")
- return finalDate
+    let dateArray = date.slice(0,10).split("-")
+    let orderDate=[]
+    orderDate.unshift(dateArray[0])
+    orderDate.unshift(dateArray[2])
+    orderDate.unshift(dateArray[1])
+    let finalDate = orderDate.join("/")
+    return finalDate
 }
-
-//document.getElementById("question").innerHTML
-//let question = document.getElementById("question")
-  //let answer = document.getElementById("answer")  
-   // document.getElementById("question").innerHTML = jsonData[0].question
