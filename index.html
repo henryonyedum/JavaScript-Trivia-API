@@ -8,21 +8,20 @@
     <link  rel = "stylesheet" href="CSS/styles.css">
 </head>
 <body>
-  <div id ="wrapper">
-    <h1>Random Jeopardy Question Generator</h1>   
-    <div id = "category"></div>
-    <div id ="question"></div>
-    <div id ="answer"></div>
-    <div id = "questiondate"></div>
-    <div id ="qabuttons">
-        <button id ="answer-button" onclick = "showAnswer()">Answer</button>
-        <button id = "new-question"onclick = "generateQuestion()">New Question</button>
-    </div>
+    <div id ="wrapper"> <!--content wrapper div-->
+        <h1>Random Jeopardy Question Generator</h1>   
+        <div id = "category"></div>
+        <div id ="question"></div>
+        <div id ="answer"></div>
+        <div id = "questiondate"></div>
+        <div id ="qabuttons">
+            <button id ="answer-button" onclick = "showAnswer()">Answer</button><!--show the answer to the current question when clicked-->
+            <button id = "new-question"onclick = "generateQuestion()">New Question</button><!--generates a new question and displays it on the web page while hiding the answer when clicked-->
+        </div>
     </div>
     <script src="javascript/trivia.js"></script>
 </body>
 </html>
-
 
 <!-- 
     element to display question

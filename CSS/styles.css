@@ -54,6 +54,7 @@ padding: 20px;
     
 }
 
+/* capitalizes the category of the question, doesn't work well with characters following quotes or parenthesis*/
 i{
     text-transform:capitalize;
 }
